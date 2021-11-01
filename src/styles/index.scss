@@ -186,3 +186,24 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.wallet-tab {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: solid 2px $main-color;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: white;
+  color: $main-color;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $main-color;
+    color: white;
+    cursor: pointer;
+  }
+}

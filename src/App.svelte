@@ -7,6 +7,7 @@
   import DisconnectButton from "./components/DisconnectButton.svelte";
   import Transfers from "./components/Transfers.svelte";
   import UpdateContract from "./components/UpdateContract.svelte";
+  import WalletTab from "./components/WalletTab.svelte";
 
   let Tezos: TezosToolkit;
   let wallet: BeaconWallet;
@@ -47,6 +48,13 @@
   }
 </style>
 
+<WalletTab
+  {userAddress}
+  {wallet}
+  {setWallet}
+  {setUserAddress}
+  {setUserBalance}
+/>
 <main>
   {#if Tezos}
     <div class="main-box">
