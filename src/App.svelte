@@ -14,7 +14,7 @@
   const contractAddress: string = "KT1WiPWNcBMcXJButkkvroRGkzs45n3iZ13c";
   let userAddress: string;
   let userBalance: number;
-  let activeTab = "contract";
+  let activeTab = "transfer";
 
   const rpcUrl = "https://hangzhounet.api.tez.ie";
 
